@@ -1,0 +1,43 @@
+asyncFuncTimeout: 1000
+output: default
+functions:
+  - id: serde
+    filter: "true"
+    disabled: null
+    conf:
+      mode: extract
+      srcField: _raw
+      type: elff
+      fields:
+        - version
+        - account_id
+        - interface_id
+        - srcaddr
+        - dstaddr
+        - srcport
+        - dstport
+        - protocol
+        - packets
+        - bytes
+        - start
+        - end
+        - action
+        - log_status
+  - id: aggregation
+    filter: "true"
+    disabled: false
+    conf:
+      passthrough: false
+      sufficientStatsOnly: false
+      metricsMode: false
+      timeWindow: 10s
+      aggregations:
+        - sum(bytes)
+      groupbys:
+        - srcaddr
+        - dstaddr
+        - srcport
+        - dstport
+        - protocol
+        - account_id
+      cumulative: false

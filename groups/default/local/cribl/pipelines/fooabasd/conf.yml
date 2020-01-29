@@ -1,0 +1,12 @@
+asyncFuncTimeout: 1000
+output: default
+functions:
+  - id: eval
+    filter: "true"
+    disabled: null
+    conf:
+      add:
+        - name: asdf
+          value: "'badsf'"
+        - name: az
+          value: "'asdfads'"

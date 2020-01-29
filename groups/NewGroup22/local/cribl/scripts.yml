@@ -1,0 +1,9 @@
+manica:
+  command: ping -c5 google.com
+  env: {}
+foo:
+  env: {}
+  command: ping
+  args:
+    - -c6
+    - google.com

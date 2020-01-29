@@ -1,0 +1,4 @@
+outputs:
+  default:
+    defaultId: devnull
+    type: default

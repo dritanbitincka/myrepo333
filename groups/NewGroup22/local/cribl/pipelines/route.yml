@@ -1,0 +1,30 @@
+id: default
+groups: {}
+routes:
+  - id: 8c1add9547103d3062629a1eb01fdcb12e5eba78
+    name: foobar
+    final: true
+    disabled: true
+    pipeline: cisco_asa
+    description: ""
+    clones: []
+    filter: sourcetype=='cisco:asa'
+    output: default
+  - id: default
+    name: default
+    final: true
+    disabled: false
+    pipeline: main
+    description: ""
+    clones: []
+    filter: "true"
+    output: default
+  - id: LCvC5e
+    name: foobar
+    final: true
+    disabled: false
+    pipeline: devnull
+    description: ""
+    clones: []
+    filter: "true"
+    output: devnull

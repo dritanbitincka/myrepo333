@@ -1,0 +1,10 @@
+asyncFuncTimeout: 1000
+output: default
+functions:
+  - id: flatten
+    filter: "true"
+    disabled: null
+    conf:
+      fields: []
+      depth: 5
+      delimiter: _

@@ -1,0 +1,15 @@
+functions:
+  - id: drop
+    filter: Math.random() > 0.5
+    disabled: true
+    conf: {}
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      add:
+        - name: cribl
+          value: "'yes'"
+        - name: version
+          value: C.confVersion
+      remove: []

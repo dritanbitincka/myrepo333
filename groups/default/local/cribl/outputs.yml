@@ -1,0 +1,14 @@
+outputs:
+  default:
+    defaultId: devnull
+    type: default
+  local9090:
+    type: tcpjson
+    host: localhost
+    port: 9090
+    compression: none
+    tls:
+      disabled: true
+    connectionTimeout: 5000
+    writeTimeout: 10000
+    onBackpressure: block

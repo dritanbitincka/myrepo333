@@ -1,0 +1,16 @@
+inputs:
+  test9595:
+    type: tcpjson
+    disabled: false
+    host: 0.0.0.0
+    port: 9595
+    tls:
+      disabled: true
+    ipWhitelistRegex: /.*/
+    authToken: ""
+  testGen:
+    disabled: false
+    samples:
+      - eventsPerSec: 2
+        sample: apache_common
+    type: datagen

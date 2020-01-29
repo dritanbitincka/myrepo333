@@ -1,0 +1,78 @@
+activeId: foobar
+rulesets:
+  default:
+    conf:
+      functions:
+        - filter: hostname.startsWith('zebr')
+          id: eval
+          description: test
+          disabled: false
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'default'"
+        - filter: env.CRIBL_HOME.match('w0')
+          id: eval
+          description: w0
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'default'"
+        - filter: env.CRIBL_HOME.match('w1')
+          id: eval
+          description: w1
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'NewGroup22'"
+        - filter: "true"
+          id: eval
+          description: Default Mappings
+          disabled: false
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'default'"
+  newrule:
+    conf:
+      functions:
+        - filter: (cpus>12 && env.CRIBL_HOME.match('w0')) || release.startsWith('18')
+          id: eval
+          description: catch all
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'NewGroup22'"
+  foobar:
+    conf:
+      functions:
+        - filter: env.CRIBL_HOME.match('w0')
+          id: eval
+          description: w0
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'default'"
+        - filter: env.CRIBL_HOME.match('w1')
+          id: eval
+          description: w1
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'NewGroup22'"
+        - filter: "true"
+          id: eval
+          description: Default Mappings
+          disabled: false
+          final: true
+          conf:
+            add:
+              - name: groupId
+                value: "'default'"

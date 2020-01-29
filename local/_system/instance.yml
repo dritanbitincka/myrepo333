@@ -1,0 +1,12 @@
+distributed:
+  mode: master
+  master:
+    host: localhost
+    port: 4203
+    tls:
+      disabled: true
+    ipWhitelistRegex: /.*/
+    authToken: criblmaster
+    compression: none
+    connectionTimeout: 5000
+    writeTimeout: 10000

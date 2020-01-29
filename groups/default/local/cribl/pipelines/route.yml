@@ -1,0 +1,39 @@
+id: default
+groups: {}
+routes:
+  - id: btTag9
+    name: default
+    final: true
+    disabled: false
+    pipeline: main
+    description: ""
+    clones: []
+    filter: "true"
+    output: default
+  - id: Gw0cGI
+    name: testA
+    final: true
+    disabled: false
+    pipeline: devnull
+    description: ""
+    clones: []
+    filter: "true"
+    output: devnull
+  - id: ccc2f4767f20b42d77369789d48d465a4b98ce13
+    name: test55
+    final: true
+    disabled: false
+    pipeline: devnull
+    description: ""
+    clones: []
+    filter: "true"
+    output: devnull
+  - id: Hhtj7G
+    name: myRoute
+    final: true
+    disabled: true
+    pipeline: cisco_asa
+    description: ""
+    clones: []
+    filter: "true"
+    output: devnull
