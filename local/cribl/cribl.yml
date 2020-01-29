@@ -8,7 +8,7 @@ api:
   host: 0.0.0.0
   port: 9009
 git:
-  remote: https://github.com/dritanbitincka/myrepo333.git
+  remote: git@github.com:dritanbitincka/myrepo333.git
 tls:
   defaultEcdhCurve: auto
   rejectUnauthorized: true
