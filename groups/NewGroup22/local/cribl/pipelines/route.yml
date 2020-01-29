@@ -13,7 +13,7 @@ routes:
   - id: default
     name: default
     final: true
-    disabled: true
+    disabled: false
     pipeline: main
     description: ""
     clones: []
