@@ -11,13 +11,13 @@ routes:
     filter: sourcetype=='cisco:asa'
     output: default
   - id: LCvC5e
-    name: foobar
+    name: foobar3
     final: true
     disabled: false
     pipeline: devnull
     description: ""
     clones: []
-    filter: Math.random<0.2
+    filter: Math.random()<0.2
     output: devnull
   - id: default
     name: default
