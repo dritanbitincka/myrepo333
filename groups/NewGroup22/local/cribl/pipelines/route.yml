@@ -10,15 +10,6 @@ routes:
     clones: []
     filter: sourcetype=='cisco:asa'
     output: default
-  - id: default
-    name: default
-    final: true
-    disabled: true
-    pipeline: main
-    description: ""
-    clones: []
-    filter: "true"
-    output: default
   - id: LCvC5e
     name: foobar
     final: true
@@ -26,5 +17,14 @@ routes:
     pipeline: devnull
     description: ""
     clones: []
-    filter: "true"
+    filter: Math.random<0.2
     output: devnull
+  - id: default
+    name: default
+    final: true
+    disabled: false
+    pipeline: main
+    description: ""
+    clones: []
+    filter: "true"
+    output: default
