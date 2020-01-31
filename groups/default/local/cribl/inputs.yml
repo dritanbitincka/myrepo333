@@ -19,3 +19,9 @@ inputs:
       disabled: true
     ipWhitelistRegex: /.*/
     authToken: ""
+  foogen:
+    disabled: false
+    samples:
+      - eventsPerSec: 2
+        sample: syslog
+    type: datagen
