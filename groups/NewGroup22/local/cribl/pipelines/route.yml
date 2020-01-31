@@ -13,7 +13,7 @@ routes:
   - id: LCvC5e
     name: foobar3
     final: true
-    disabled: false
+    disabled: true
     pipeline: devnull
     description: ""
     clones: []
