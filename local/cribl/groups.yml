@@ -1,6 +1,6 @@
 default:
   description: Default Worker Groups
   tags: default
-  configVersion: d435491d
+  configVersion: 7823d460
 NewGroup22:
-  configVersion: fb95e956
+  configVersion: 1dece403
